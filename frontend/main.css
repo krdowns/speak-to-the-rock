@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 /* NAV */
 
 nav {
@@ -5,7 +9,7 @@ nav {
     /* border: 2px solid blue; */
     /* position: absolute; */
     height: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     background-color: #1c2e4a;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,15 +35,16 @@ li:hover {
     cursor: pointer;
 }
 
-/* BODY */
+/* WELCOME */
 
 .welcome-container {
-    padding: 0 15%;
+    margin: 0 auto;
+    padding: 50px 15%;
 }
 
 .welcome-header {
     text-align: center;
-    margin: 20px;
+    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 42px;
 }
@@ -47,4 +52,32 @@ li:hover {
 .welcome-body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
+    margin: 20px auto;
+}
+
+/* VIDEO PLAYER */
+
+iframe {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: #eee;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-container {
+    width: 20px;
 }
