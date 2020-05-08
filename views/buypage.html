@@ -12,54 +12,95 @@
     <body>
         <nav>
             <ul class="left-nav">
-                <li><a href="homepage">LOGO</a></li>
+                <li><a href="/">LOGO</a></li>
             </ul>
             <ul class="right-nav">
                 <li><a href="about">About</a></li>
                 <li><a href="contact">Contact</a></li>
-                <li><a href="buypage">Buy Book</a></li>
+                <li><a href="buypage">Store</a></li>
             </ul>
         </nav>
 
         <!-- <img src="../media/job-unseen.jpg"> -->
 
         <div class="video-container">
-            <video controls autoplay>
+            <video controls>
                 <source src="../media/job-unseen.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
         </div>
 
+        <!-- <div id='Kindle-Reader'></div>
+          <script type='text/javascript' src='http://kindleweb.s3.amazonaws.com/app/KindleReader-min.js'></script>
+          <script>KindleReader.LoadSample(
+              {
+                containerID: 'Kindle-Reader', 
+                width: '600', 
+                height: '800',
+                asin: 'B074PYWTMB',
+                assoctag: '',
+              }
+            );
+          </script> -->
+
         <!-- Trigger/Open The Modal -->
-<button id="myBtn">Buy Book</button>
+      <button id="myBtn">Buy Book</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="close-button-container">
-        <button class="close">x</button>
-    </div>
-    <form action="../pages/charge.html" method="post" id="payment-form">
-        <div class="form-row">
-          <label for="card-element">
-            Credit or debit card
-          </label>
-          <div id="card-element">
-            <!-- A Stripe Element will be inserted here. -->
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="close-button-container">
+              <button class="close">x</button>
           </div>
-      
-          <!-- Used to display Element errors. -->
-          <div id="card-errors" role="alert"></div>
-        </div>
-        <div class="submit-payment-button-container">
-            <button class="submit-payment">Submit Payment</button>
-        </div>
-      </form>
-  </div>
+          <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
 
-</div>
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-sku_HF9awPNYvQ6sdx"
+  role="link"
+>
+  Checkout
+</button>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_test_MP49UhapbiCmOhfy05TNWwOP');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_HF9awPNYvQ6sdx');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_HF9awPNYvQ6sdx', quantity: 1}],
+      
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://localhost:3000/success',
+      cancelUrl: 'https://localhost:3000/cancelled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
+        </div>
+
+      </div>
 
         <script src="../scripts/main.js" async defer></script>
         <script src="https://js.stripe.com/v3/"></script>
