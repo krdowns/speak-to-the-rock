@@ -20,6 +20,10 @@ app.get("/buypage", function (req, res) {
   res.sendFile("./views/buypage.html", { root: __dirname });
 });
 
+app.get("/cancelled", function (req, res) {
+  res.sendFile("./views/cancelled.html", { root: __dirname });
+});
+
 app.get("/charge", function (req, res) {
   res.sendFile("./views/charge.html", { root: __dirname });
 });
@@ -30,6 +34,10 @@ app.get("/contact", function (req, res) {
 
 app.get("/secret", async (req, res) => {
   const intent = res.json({ client_secret: intent.client_secret }); // ... Fetch or create the PaymentIntent
+});
+
+app.get("/success", function (req, res) {
+  res.sendFile("./views/success.html", { root: __dirname });
 });
 
 // SERVER START
