@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAV */
@@ -9,7 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #1c2e4a;
+    background-color: #111;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,7 +24,11 @@ nav ul {
 }
 
 .left-nav {
-    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.left-nav img {
+    width: 240px;
 }
 
 .right-nav {
@@ -59,7 +64,7 @@ a, button:hover {
     margin: 0 auto;
     margin-bottom: 50px;
     padding: 50px 15%;
-    background-image: url("./media/mountain-hero.jpg");
+    background-image: url("./media/main.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,6 +97,11 @@ a, button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.book-container img {
+    /* height: 30%; */
+    width: 100%;
 }
 
 .book-container button {
@@ -175,12 +185,16 @@ a, button:hover {
 }
 
 .video-container {
-    width: 80%;
-    padding: 0 5%;
+    width: 60%;
+    padding-left: 10%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: row;
+}
+
+.book-video {
+    width: 100%;
 }
 
 /* WLR */
@@ -211,13 +225,28 @@ a, button:hover {
 }
 
 .wlr-2 {
-    width: 20%;
+    width: 25%;
     background-color: #efefef;
 }
 
 .audio-list {
     display: flex;
     flex-direction: column;
+}
+
+.about-container {
+    height: 400px;
+}
+
+.about-text-container {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.about-container h1 {
+    margin-bottom: 10px;
+    
 }
 
 /* FOOTER */
