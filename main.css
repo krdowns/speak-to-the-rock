@@ -57,7 +57,12 @@ a, button:hover {
 .welcome-container {
     height: 400px;
     margin: 0 auto;
+    margin-bottom: 50px;
     padding: 50px 15%;
+    background-image: url("./media/mountain-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .welcome-header {
@@ -196,7 +201,6 @@ a, button:hover {
 }
 
 .wlr-container>div {
-    width: 33.3%;
     text-align: center;
 }
 
@@ -204,6 +208,11 @@ a, button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.wlr-2 {
+    width: 20%;
+    background-color: #efefef;
 }
 
 .audio-list {

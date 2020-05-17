@@ -34,7 +34,7 @@ function initPlayers(num) {
       // variables
       // ----------------------------------------------------------
       // audio embed object
-      const playerContainer = document.getElementById("player-container"),
+      let playerContainer = document.getElementById("player-container"),
         player = document.getElementById("player"),
         isPlaying = false,
         playBtn = document.getElementById("play-btn");
@@ -50,6 +50,7 @@ function initPlayers(num) {
       // Controls & Sounds Methods
       // ----------------------------------------------------------
       function togglePlay() {
+        console.log(document.getElementById("play-btn").className);
         if (player.paused === false) {
           player.pause();
           isPlaying = false;
