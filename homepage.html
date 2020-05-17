@@ -5,13 +5,14 @@
         <title>Speak To The Rock Ministries</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../public/styles/reset.css">
-        <link rel="stylesheet" href="../public/styles/main.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="audioplayer.css">
     </head>
     <body>
         <nav id="top">
             <ul class="left-nav">
-                <li><a href="top">Speak to the Rock</a></li>
+                <li><a href="">Speak to the Rock</a></li>
             </ul>
             <ul class="right-nav">
                 <li><a href="#watch">Watch</a></li>
@@ -43,7 +44,7 @@
             </div>
             <div class="video-container">
                 <video class="book-video" controls>
-                    <source src="../media/job-unseen.mp4" type="video/mp4">
+                    <source src="./media/job-unseen.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -51,14 +52,62 @@
         </div>
         
         <div class="wlr-container">
-            <div class="wlr-1" id="watch">
-                <h1>Watch</h1>
+            <div class="wlr-1">
+                <h1 id="watch">Watch</h1>
+                <div class="video-list"></div>
             </div>
-            <div class="wlr-2" id="listen">
-                <h1>Listen</h1>
+            <div class="wlr-2">
+                <h1 id="listen">Listen</h1>
+                <div class="audio-list-container">
+                    <ul class="audio-list">
+                        <li>
+                            <div class="audio-player">
+                                <div id="play-btn" class="play"></div>
+                                <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                    <audio id="player" ontimeupdate="initProgressBar()">
+                                        <source src="./media/bensound-betterdays.mp3" type="audio/mp3">
+                                    </audio>
+                                </div>
+                                <div class="player-controls scrubber">
+                                    <p>Better Days <small>by</small> Ben Sound</p>
+                                    <span id="seek-obj-container">
+                                        <progress id="seek-obj" value="0" max="1"></progress>
+                                    </span>
+                                    <small id="start-time"></small>
+                                    <small id="end-time"></small>
+                                </div>
+                                <!-- <div class="album-image" style="background-image: url(https://artistxite.ie/imgcache/album/005/161/005161476_500.jpg)"></div> -->
+                            </div>
+                            <!-- <audio id="player1">
+                                <source src="./media/bensound-betterdays.mp3" type="audio/mp3">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <div>
+                                <button onclick = "document.getElementById('player1').play()">Play</button>
+                                <button onclick = "document.getElementById('player1').pause()">Pause</button>
+                                <button onclick = "document.getElementById('player1').volume += 0.2">Vol+</button>
+                                <button onclick = "document.getElementById('player1').volume -= 0.2">Vol-</button>
+                            </div>
+                        </li>
+                        <li>
+                            <audio id="player2">
+                                <source src="./media/bensound-tenderness.mp3" type="audio/mp3">
+                                Your browser does not support audio tag.
+                            </audio>
+                            <div>
+                                <button onclick = "document.getElementById('player2').play()">Play</button>
+                                <button onclick = "document.getElementById('player2').pause()">Pause</button>
+                                <button onclick = "document.getElementById('player2').volume += 0.2">Vol+</button>
+                                <button onclick = "document.getElementById('player2').volume -= 0.2">Vol-</button>
+                            </div>
+                        </li> -->
+                        <li></li>
+                    </ul>
+                </div>
             </div>
-            <div class="wlr-3" id="read">
-                <h1>Read</h1>
+            <div class="wlr-3">
+                <h1 id="read">Read</h1>
+                <div class="reading-list"></div>
             </div>
         </div>
 
@@ -94,10 +143,19 @@
             </div>
         </div>
 
+        <div class="about-container" id=about>
+            <div class="about-text-container">
+                <h1>About David</h1>
+                <p></p>
+            </div>
+            <img src="#">
+        </div>
+
         <footer>
             <p>Follow us on Facebook</p>
             <p>&copy;2020 Speak To The Rock Ministries</p>
         </footer>
+
 
         
         
@@ -105,9 +163,8 @@
         
         
         
-        <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
-        <script src="../public/scripts/main.js"></script>
-        <!-- <script src="https://js.stripe.com/v3/"></script> -->
-        
+        <script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="audioplayer.js"></script>
     </body>
 </html>
