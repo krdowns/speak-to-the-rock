@@ -54,34 +54,63 @@ a, button:hover {
 /* HERO */
 
 .hero-image {
-    height: 400px;
+    height: 600px;
 }
 
 /* WELCOME */
 
 .welcome-container {
-    height: 400px;
+    height: 600px;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding: 50px 15%;
-    background-image: url("./media/main.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #000;
+    display: flex;
 }
 
-.welcome-header {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 42px;
+.welcome-container svg {
+    width: 200px;
+    color: white;
+    /* position: fixed; */
+    margin-left: -12000px;
+    margin-top: 210px;
 }
 
-.welcome-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 20px;
-    margin: 20px auto;
+.video-container {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: row;
+    /* padding-top: 10%; */
 }
+
+.video-container h1 {
+    color: white;
+}
+
+.book-video {
+    /* border: 2px solid red; */
+    float: inline-end;
+    z-index: 0;
+}
+
+.play-button-container {
+    border: 2px solid green;
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    z-index: 100;
+
+}
+
+#play-button {
+    background: royalblue;
+    width: 50px;
+    height: 50px;
+    color: black;
+
+}
+
 
 /* BOOK INFO */
 
@@ -90,6 +119,7 @@ a, button:hover {
     display: flex;
     flex-direction: row;
     padding: 0;
+    /* border: 2px solid blue; */
 }
 
 .book-container {
@@ -97,6 +127,7 @@ a, button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid red;
 }
 
 .book-container img {
@@ -184,19 +215,6 @@ a, button:hover {
     margin-top: 20px;
 }
 
-.video-container {
-    width: 60%;
-    padding-left: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: row;
-}
-
-.book-video {
-    width: 100%;
-}
-
 /* WLR */
 
 .wlr-container {
@@ -224,8 +242,8 @@ a, button:hover {
     justify-content: center;
 }
 
-.wlr-2 {
-    width: 25%;
+.wlr-1, .wlr-2, .wlr-3 {
+    width: 380px;
     background-color: #efefef;
 }
 
@@ -234,37 +252,66 @@ a, button:hover {
     flex-direction: column;
 }
 
+/* BLOG */
+
+.blog-container {
+    width: 100%;
+    height: 400px;
+    padding: 50px 75px;
+    margin-top: 20px;
+    background-color: #efefef;
+}
+
+/* ABOUT */
+
 .about-container {
     height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 .about-text-container {
     width: 60%;
     margin-top: 50px;
     margin-left: 10%;
+    margin-right: 5%;
 }
 
 .about-container h1 {
     margin-bottom: 10px;
-    
+    font-size: 20px;
+}
+
+.about-container img {
+    width: 300px;
+    height: 241px;
+    margin-top: 50px;
 }
 
 /* FOOTER */
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     text-align: center;
     background-color: #eee;
-    height: 50px;
+    height: 75px;
     position: fixed;
     left: 0;
     bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.icon-container {
+.follow-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.follow-container img {
     width: 20px;
 }

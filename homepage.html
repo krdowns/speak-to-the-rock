@@ -25,10 +25,59 @@
         </div> -->
 
         <div class="welcome-container">
-            <h1 class="welcome-header">Welcome</h1>
-
-            <p class="welcome-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam assumenda fugiat earum temporibus, eligendi quis commodi repudiandae. Perspiciatis illo aspernatur, quia earum dolore maiores amet saepe voluptatum, vitae architecto modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores, perferendis reprehenderit fuga quae facere! Temporibus, unde tenetur! Ullam veritatis voluptas quaerat fuga et dolore odit dolorum minus impedit iure!</p>
-
+            <div id="video_container">
+                <video id="video" poster="./media/str-logo.png">
+                   <source src="./media/job-unseen.mp4" type="video/mp4">
+                </video>
+            </div>
+             <div class="play-button-container">
+                <button id="play_button">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 265.404 265.404" style="enable-background:new 0 0 265.404 265.404;" fill="#eee" xml:space="preserve">
+                    <g>
+                        <path style="fill:#eee;" d="M194.172,123.684l-78.081-51.122c-1.921-1.257-4.032-1.922-6.106-1.922
+                            c-5.521,0-9.686,4.496-9.686,10.458v103.207c0,5.962,4.164,10.458,9.685,10.458c2.075,0,4.187-0.665,6.106-1.923l78.082-51.129
+                            c3.251-2.129,5.117-5.415,5.116-9.014C199.289,129.098,197.424,125.814,194.172,123.684z M115.3,175.429V89.973l65.256,42.725
+                            L115.3,175.429z"/>
+                        <path style="fill:#eee;" d="M132.702,0.001C59.53,0.001,0,59.53,0,132.702c0,73.172,59.53,132.702,132.702,132.702
+                            s132.702-59.53,132.702-132.702C265.404,59.53,205.875,0.001,132.702,0.001z M132.702,250.404
+                            C67.801,250.404,15,197.603,15,132.702C15,67.801,67.801,15.001,132.702,15.001s117.702,52.8,117.702,117.701
+                            C250.404,197.603,197.604,250.404,132.702,250.404z"/>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </button>
+             </div>
         </div>
 
         <div class="book-info-container">
@@ -41,76 +90,91 @@
                     </div>
                 </div>
             </div>
-            <div class="video-container">
-                <video class="book-video" controls>
-                    <source src="./media/job-unseen.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+
             </div>
         </div>
         
         <div class="wlr-container">
             <div class="wlr-1">
-                <h1 id="watch">Watch</h1>
-                <div class="video-list"></div>
+                <h1 class="listen">Listen</h1>
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./media/8-21-am.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="player-controls scrubber">
+                                <p>Spirit Break Out <small></small></p>
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time"></small>
+                                    <small id="end-time"></small>
+                                </div>
+                            </div>
+                            <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
+                        </div>
+                    </div>
             </div>
             <div class="wlr-2">
-                <h1 id="listen">Listen</h1>
+                <h1 class="listen">Listen</h1>
                 <div class="audio-list-container">
-                    <ul class="audio-list">
-                        <li>
-                            <div class="audio-player">
-                                <div id="play-btn" class="play"></div>
-                                <div class="audio-wrapper" id="player-container" href="javascript:;">
-                                    <audio id="player" ontimeupdate="initProgressBar()">
-                                        <source src="./media/8-21-am.mp3" type="audio/mp3">
-                                    </audio>
-                                </div>
-                                <div class="player-controls scrubber">
-                                    <p>Spirit Break Out <small></small></p>
-                                    <span id="seek-obj-container">
-                                        <progress id="seek-obj" value="0" max="1"></progress>
-                                    </span>
-                                    <div class="timer-container">
-                                        <small id="start-time"></small>
-                                        <small id="end-time"></small>
-                                    </div>
-                                </div>
-                                <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
-                            </div>
-                            <!-- <audio id="player1">
-                                <source src="./media/bensound-betterdays.mp3" type="audio/mp3">
-                                Your browser does not support the audio tag.
+                    <div class="audio-player">
+                        <div id="play-btn" class="play"></div>
+                        <div class="audio-wrapper" id="player-container" href="javascript:;">
+                            <audio id="player" ontimeupdate="initProgressBar()">
+                                <source src="./media/8-21-am.mp3" type="audio/mp3">
                             </audio>
-                            <div>
-                                <button onclick = "document.getElementById('player1').play()">Play</button>
-                                <button onclick = "document.getElementById('player1').pause()">Pause</button>
-                                <button onclick = "document.getElementById('player1').volume += 0.2">Vol+</button>
-                                <button onclick = "document.getElementById('player1').volume -= 0.2">Vol-</button>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <p>Spirit Break Out <small></small></p>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time"></small>
+                                <small id="end-time"></small>
                             </div>
-                        </li>
-                        <li>
-                            <audio id="player2">
-                                <source src="./media/bensound-tenderness.mp3" type="audio/mp3">
-                                Your browser does not support audio tag.
-                            </audio>
-                            <div>
-                                <button onclick = "document.getElementById('player2').play()">Play</button>
-                                <button onclick = "document.getElementById('player2').pause()">Pause</button>
-                                <button onclick = "document.getElementById('player2').volume += 0.2">Vol+</button>
-                                <button onclick = "document.getElementById('player2').volume -= 0.2">Vol-</button>
-                            </div>
-                        </li> -->
-                        <li></li>
-                    </ul>
+                        </div>
+                        <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
+                    </div>
                 </div>
             </div>
             <div class="wlr-3">
-                <h1 id="read">Read</h1>
-                <a href="https://bairdbc.tumblr.com/"><img src="#"></a>
-                <div class="reading-list"></div>
+                <h1 class="listen">Listen</h1>
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn" class="play"></div>
+                        <div class="audio-wrapper" id="player-container" href="javascript:;">
+                            <audio id="player" ontimeupdate="initProgressBar()">
+                                <source src="./media/8-21-am.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <p>Spirit Break Out <small></small></p>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time"></small>
+                                <small id="end-time"></small>
+                            </div>
+                        </div>
+                        <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="blog-container">
+            <h1 id="read"></h1>
+            <a href="./blog.html">
+                <h2>Go to Gracebrakes</h2>
+            </a>
+            <div class="reading-list"></div>
         </div>
 
         <!-- The Modal -->
@@ -150,11 +214,14 @@
                 <h1>About David</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente neque voluptatum sunt nulla alias dolor consequatur, optio, quasi enim, ad illo quia. Totam quaerat ad, expedita eos necessitatibus ducimus nihil. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident unde reiciendis eligendi minus, fugit earum. Impedit assumenda libero corporis, culpa error minima aspernatur laudantium cupiditate eum voluptatem! Mollitia, non necessitatibus.</p>
             </div>
-            <img src="#">
+            <img src="./media/david_baird.jpg">
         </div>
 
         <footer>
-            <p>Follow us on Facebook</p>
+            <div class="follow-container">
+                <p>Follow us on Facebook</p>
+                <a href="https://www.facebook.com/speaktotherock/"><img src="./media/facebook.svg"></a>
+            </div>
             <p>&copy;2020 Speak To The Rock Ministries</p>
         </footer>
 
