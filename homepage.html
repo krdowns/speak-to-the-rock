@@ -70,18 +70,53 @@
         </div> -->
 
         <div class="wlr-container">
-            <div class="wlr-1">
-                <h1 class="listen">Listen</h1>
+            <div class="wlr-header-container">
+                <h1 class="wlr-header">Listen</h1>
+                <div class="hide-section-container">
+                    <h3 class="hide-section">Hide section</h3>
+                    <button class="hide-section-button">
+                        
+                    </button>
+                </div>
+            </div>
+            <div class="listen-container">
+                <div class="wlr wlr-1">
+                    <h1 class="listen">Listen</h1>
+                        <div class="audio-list-container">
+                            <div class="audio-player">
+                                <div id="play-btn" class="play"></div>
+                                <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                    <audio id="player" ontimeupdate="initProgressBar()">
+                                        <source src="./media/Jul08.mp3" type="audio/mp3">
+                                    </audio>
+                                </div>
+                                <div class="player-controls scrubber">
+                                    <p>July 8th, 2020<small></small></p>
+                                    <span id="seek-obj-container">
+                                        <progress id="seek-obj" value="0" max="1"></progress>
+                                    </span>
+                                    <div class="timer-container">
+                                        <small id="start-time"></small>
+                                        <small id="end-time"></small>
+                                    </div>
+                                </div>
+                                <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
+                                <div class="album-image-shadow" style="background-image: url()"></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="wlr wlr-2">
+                    <h1 class="listen">Listen</h1>
                     <div class="audio-list-container">
                         <div class="audio-player">
                             <div id="play-btn" class="play"></div>
                             <div class="audio-wrapper" id="player-container" href="javascript:;">
                                 <audio id="player" ontimeupdate="initProgressBar()">
-                                    <source src="./media/8-21-am.mp3" type="audio/mp3">
+                                    <source src="./media/Jul19.mp3" type="audio/mp3">
                                 </audio>
                             </div>
                             <div class="player-controls scrubber">
-                                <p>Spirit Break Out <small></small></p>
+                                <p>July 19th, 2020<small></small></p>
                                 <span id="seek-obj-container">
                                     <progress id="seek-obj" value="0" max="1"></progress>
                                 </span>
@@ -93,52 +128,29 @@
                             <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
                         </div>
                     </div>
-            </div>
-            <div class="wlr-2">
-                <h1 class="listen">Listen</h1>
-                <div class="audio-list-container">
-                    <div class="audio-player">
-                        <div id="play-btn" class="play"></div>
-                        <div class="audio-wrapper" id="player-container" href="javascript:;">
-                            <audio id="player" ontimeupdate="initProgressBar()">
-                                <source src="./media/8-21-am.mp3" type="audio/mp3">
-                            </audio>
-                        </div>
-                        <div class="player-controls scrubber">
-                            <p>Spirit Break Out <small></small></p>
-                            <span id="seek-obj-container">
-                                <progress id="seek-obj" value="0" max="1"></progress>
-                            </span>
-                            <div class="timer-container">
-                                <small id="start-time"></small>
-                                <small id="end-time"></small>
-                            </div>
-                        </div>
-                        <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
-                    </div>
                 </div>
-            </div>
-            <div class="wlr-3">
-                <h1 class="listen">Listen</h1>
-                <div class="audio-list-container">
-                    <div class="audio-player">
-                        <div id="play-btn" class="play"></div>
-                        <div class="audio-wrapper" id="player-container" href="javascript:;">
-                            <audio id="player" ontimeupdate="initProgressBar()">
-                                <source src="./media/8-21-am.mp3" type="audio/mp3">
-                            </audio>
-                        </div>
-                        <div class="player-controls scrubber">
-                            <p>Spirit Break Out <small></small></p>
-                            <span id="seek-obj-container">
-                                <progress id="seek-obj" value="0" max="1"></progress>
-                            </span>
-                            <div class="timer-container">
-                                <small id="start-time"></small>
-                                <small id="end-time"></small>
+                <div class="wlr wlr-3">
+                    <h1 class="listen">Listen</h1>
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./media/Jul22.mp3" type="audio/mp3">
+                                </audio>
                             </div>
+                            <div class="player-controls scrubber">
+                                <p>July 22nd, 2020<small></small></p>
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time"></small>
+                                    <small id="end-time"></small>
+                                </div>
+                            </div>
+                            <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
                         </div>
-                        <div class="album-image" style="background-image: url(https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg)"></div>
                     </div>
                 </div>
             </div>

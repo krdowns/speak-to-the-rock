@@ -146,10 +146,78 @@ video {
 .wlr-container {
     position: absolute;
     display: flex;
+    flex-direction: column;
+    left: 73px;
+    top: 1230px;
+}
+
+.wlr-header-container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    left: 66px;
-    top: 1266px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+.wlr-header {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+}
+
+.hide-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    align-content: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 101px;
+    height: 18px;
+}
+
+.hide-section {
+    width: 81px;
+    height: 18px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.hide-section-button {
+    background-image: url(media/chevron--down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    
+}
+
+.listen-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 1168px;
     height: 263px;
+    margin-left: 72px;
+}
+
+.wlr {
+    background-color: #eee;
+    width: 364px;
+    height: 250px;
+}
+
+.wlr h1 {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.album-image {
+    width: 90px;
+    height: 91px;
+    z-index: 1;
+    box-shadow: 4px -5px #AC231F;
 }
