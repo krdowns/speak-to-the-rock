@@ -47,13 +47,13 @@
   margin-left: 10px;
 }
 
-#start-time {
+#start-time, #start-time2, #start-time3 {
   float: left; position: relative;
   margin-top: 5px;
   font-size: 10px;
 }
 
-#end-time {
+#end-time, #end-time2, #end-time3 {
   float: right; position: relative;
   margin-top: 5px;
   font-size: 10px;
@@ -64,7 +64,8 @@
   margin: 10px 0 10px 12.5px;
   width: fit-content;
 }
-.audio-player #play-btn {
+
+.audio-player #play-btn, #play-btn2, #play-btn3{
   background-image: url("./media/play.svg");
   background-size: cover;
   width: 40px;
@@ -78,8 +79,30 @@
   height: 40px;
 }
 
+.audio-player #play-btn2.pause {
+  background-image: url("./media/pause.svg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+
+.audio-player #play-btn3.pause {
+  background-image: url("./media/pause.svg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+
 #play-btn:hover {
   cursor: pointer;
 }
 
+#play-btn2:hover {
+  cursor: pointer;
+}
+#play-btn3:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=audioplayer.css.map */
