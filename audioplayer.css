@@ -2,9 +2,9 @@
   text-align: center;
   display: flex;
   flex-flow: row;
-  width: 100%;
+  width: 410px;
+  height: 200px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;  
   font-size: 12px;
 }
 
@@ -14,17 +14,53 @@
   background-size: cover;
 }
 
-.audio-player .player-controls {
-  align-items: center;
-  justify-content: center;
-  flex: 3;
+.player-controls h1 {
+  font-size: 16px;
+  color: #161616;
+  font-weight: bolder;
+  padding-top: 36px;
 }
 
-.audio-player .player-controls progress {
+.audio-player .player-controls {
+  align-items: center;
+  /* /* justify-content: center;
+  flex: 3; */
+}
+
+#play-btn, #play-btn2, #playbtn3 {
+  margin: 24px 16px 0 24px;
+  width: 40px;
+  height: 40px;
+}
+
+.player-controls {
+  height: 48px;
+}
+
+.message-text-container {
+  width: 294px;
+}
+
+.message-text {
+  text-align: left;
+  font-family: "IBM Plex Sans"; 
+  font-size: 14px;
+  line-height: 18px;
+  width: 300px;
+  color: #393939;
+}
+
+progress {
+  width: 293px;
+  margin-top: 16px;
+}
+
+/* .audio-player .player-controls progress {
   width: 80%;
   margin-top: 10px;
   margin-left: -20px;
-}
+} */
+
 .audio-player .player-controls progress[value] {
   -webkit-appearance: none;
   appearance: none;
@@ -32,37 +68,36 @@
   color: #1c2e4a;
   height: 5px;
 }
+
 .audio-player .player-controls progress[value]::-webkit-progress-bar {
   background-color: white;
   border-radius: 2px;
   border: 1px solid #dfdfdf;
   color: #1c2e4a;
 }
+
 .audio-player .player-controls progress::-webkit-progress-value {
-  background-color: #1;
+  background-color: #333;
 }
 
 .timer-container {
-  width: 80%;
-  margin-left: 10px;
+  width: 100%;
+  margin-left: 0px;
+  font-family: "IBM Plex Sans";
 }
 
 #start-time, #start-time2, #start-time3 {
   float: left; position: relative;
   margin-top: 5px;
+  margin-left: 2px;
   font-size: 10px;
 }
 
 #end-time, #end-time2, #end-time3 {
   float: right; position: relative;
   margin-top: 5px;
+  margin-right: 0;  
   font-size: 10px;
-}
-
-.audio-player .player-controls p {
-  font-size: 14px;
-  margin: 10px 0 10px 12.5px;
-  width: fit-content;
 }
 
 .audio-player #play-btn, #play-btn2, #play-btn3{
@@ -70,6 +105,7 @@
   background-size: cover;
   width: 40px;
   height: 40px;
+  margin: 24px 16px 0 24px;
 }
 
 .audio-player #play-btn.pause {
@@ -86,14 +122,12 @@
   height: 40px;
 }
 
-
 .audio-player #play-btn3.pause {
   background-image: url("./media/pause.svg");
   background-size: cover;
   width: 40px;
   height: 40px;
 }
-
 
 #play-btn:hover {
   cursor: pointer;
@@ -105,4 +139,3 @@
 #play-btn3:hover {
   cursor: pointer;
 }
-/*# sourceMappingURL=audioplayer.css.map */
