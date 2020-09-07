@@ -176,4 +176,4 @@ function calculateCurrentValue(currentTime) {
   return current_time;
 }
 
-initPlayers(jQuery("#player-container3").length);
+initPlayers(jQuery("#player-container").length);
