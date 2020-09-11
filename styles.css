@@ -21,8 +21,6 @@ html {
 
 [class*="col-"] {
     float: left;
-    /* padding: 15px; */
-    border: 2px solid transparent;
   }
 
   .row::after {
