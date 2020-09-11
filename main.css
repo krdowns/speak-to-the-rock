@@ -105,7 +105,7 @@ a, button:hover {
 }
 
 .hero-image img {
-    position: absolute;
+    /* position: absolute; */
     top: 48px;
     width: 1007px;
     height: 651px;

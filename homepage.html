@@ -13,7 +13,7 @@
     </head>
     <body>
         <nav id="top">
-            <ul class="left-nav">
+            <ul class="left-nav col-2">
                 <li>
                     <a href="">
                         <img class="logo" src="./media/str-logo.png">
@@ -21,10 +21,16 @@
                 </li>
             </ul>
 
-            <ul class="right-nav"></ul>
+            <ul class="col-7"></ul>
+
+            <ul class="right-nav col-2">
+                <li><a>Watch</a></li>
+                <li><a  href="listen.html">Listen</a></li>
+            </ul>
         </nav>
-        <div class="hero-section">
-            <div class="hero-text">
+
+        <div class="hero-section col-12 row">
+            <div class="hero-text col-4">
                 <div class="header-container">
                     <div class="speak-container">
                         <h2>Speak</h2>
@@ -41,26 +47,19 @@
                     <p>They drank from the spiritual rock…and that rock was Christ.</p>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image col-8">
 
             </div> 
         </div>
 
-        <div class="welcome-container">
-            <div id="video_container">
-                <!-- <video id="video" poster="./media/video-poster.png" controls> -->
-                   <!-- <source src="./media/job-unseen.mp4" type="video/mp4"> -->
-                    
-                    <iframe src="https://player.vimeo.com/video/228676448?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-                        <img src="./media/video-poster.png" width="648px" height="413px">
-                    </iframe>
-
-                <!-- </video> -->
+        <div class="welcome-container row col-12">
+            <div id="video_container" class="col-5"> 
+                <iframe src="https://player.vimeo.com/video/228676448?title=0&byline=0&portrait=0"  width=100% height=600 frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
-            <div class="video-container-text">
-                <h2 class="video-header">Job Unseen</h2>
-                <p class="video-body-text">
-                    Need to fill in some content here about the book and how to buy on Amazon and or clock preview to read a few pages.
+            <div class="video-container-text col-6">
+                <h2 class="video-header col-3">Job Unseen</h2>
+                <p class="video-body-text col-3">
+                    Need to fill in some content here about the book and how to buy on Amazon and or clock preview to read a few pages. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti fugiat adipisci, non suscipit dolor voluptas quidem provident rem reiciendis neque itaque, aperiam natus mollitia nisi doloribus est accusantium distinctio culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque optio, totam quam porro blanditiis distinctio earum adipisci, sit odio neque doloremque accusantium laborum? Vero est, impedit illum aliquam delectus sed.
                 </p>
                 <button id="buy-button">
                     <a href="https://www.amazon.com/dp/B074PYWTMB/ref=rdr_kindle_ext_tmb">
@@ -69,28 +68,35 @@
             </div>
         </div>
 
-        <div class="wlr-container">
+        <div class="wlr-container row col-12">
             <div class="wlr-header2-container">
                 <h1 class="wlr-header2">Watch</h1>
+                <h2 class="see-all col2">
+                    <a>See All <svg class="see-all-arrow" width="16" height="14" fill-rule="evenodd"><path d="M11.95 5.997L7.86 2.092 9.233.639l6.763 6.356-6.763 6.366L7.86 11.91l4.092-3.912H-.003v-2h11.952z" fill-rule="nonzero"></path></svg></a>
+                </h2>
             </div>
 
-            <div class="watch-container">
-                <div class="wlr wlr-1">
-                    <iframe width="410" height="200" src="https://www.youtube.com/embed/AVuCxc1AWJw?modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div class="watch-container row">
+                <div class="wlr wlr-1 video1">
+                    <iframe src="https://www.youtube.com/embed/AVuCxc1AWJw?modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="wlr wlr-2">
-                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FGraceCovenantWorshipCenter%2Fvideos%2F718191312293164%2F&show_text=0&width=560" width="410" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                <div class="wlr wlr-2 video2">
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FGraceCovenantWorshipCenter%2Fvideos%2F718191312293164%2F&show_text=0&width=560"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
                 </div>
-                <div class="wlr wlr-3">
-                    <iframe width="410" height="200" src="https://www.youtube.com/embed/C4CP8YVR6sc?modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="wlr wlr-3 video3">
+                    <iframe src="https://www.youtube.com/embed/C4CP8YVR6sc?modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="wlr-header-container">
-                <h1 class="wlr-header">Listen</h1>
+            <div class="wrapper">
+                <div class="wlr-header-container">
+                    <h1 class="wlr-header col2">Listen</h1>
+                    <h2 class="see-all col2">
+                        <a>See All <svg class="see-all-arrow" width="16" height="14" fill-rule="evenodd"><path d="M11.95 5.997L7.86 2.092 9.233.639l6.763 6.356-6.763 6.366L7.86 11.91l4.092-3.912H-.003v-2h11.952z" fill-rule="nonzero"></path></svg></a>
+                    </h2>
+                </div>
             </div>
-            <div class="listen-container">
-                <div class="wlr wlr-1 audio">
+            <div class="listen-container row">
+                <div class="wlr wlr-1 audio1">
                         <div class="audio-list-container">
                             <div class="audio-player">
                                 <div id="play-btn" class="play"></div>
@@ -102,7 +108,7 @@
                                 <div class="player-controls scrubber">
                                     <h1>Title Of Message<small></small></h1>
                                     <div class="message-text-container">
-                                        <p class="message-text">This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters.</p>
+                                        <p class="message-text">This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters. This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters.</p>
                                     </div>
                                     
                                     <span id="seek-obj-container">
@@ -116,7 +122,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="wlr wlr-2 audio">
+                <div class="wlr wlr-2 audio2">
                     <div class="audio-list-container">
                         <div class="audio-player">
                             <div id="play-btn2" class="play"></div>
@@ -128,7 +134,7 @@
                             <div class="player-controls scrubber">
                                 <h1>Title Of Message<small></small></h1>
                                 <div class="message-text-container">
-                                    <p class="message-text">This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters.</p>
+                                    <p class="message-text">This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters. This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters.</p>
                                 </div>
                                 <span id="seek-obj-container">
                                     <progress id="seek-obj2" value="0" max="1"></progress>
@@ -141,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wlr wlr-3 audio">
+                <div class="wlr wlr-3 audio3">
                     <div class="audio-list-container">
                         <div class="audio-player">
                             <div id="play-btn3" class="play"></div>
@@ -153,7 +159,8 @@
                             <div class="player-controls scrubber">
                                 <h1>Title Of Message<small></small></h1>
                                 <div class="message-text-container">
-                                    <p class="message-text">This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters.</p>
+                                    <p class="message-text">This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters. This is a description about this message that does not exceed three lines of text. If there is a need to exceed three lines of text, the copy will truncate after a certain amount of characters.
+                                    </p>
                                 </div>
                                 <span id="seek-obj-container">
                                     <progress id="seek-obj3" value="0" max="1"></progress>
@@ -169,9 +176,9 @@
             </div>
         </div>
 
-        <div class="about-container" id=about>
-            <img src="./media/david_baird.jpg">
-            <div class="about-text-container">
+        <div class="about-container col-12 row" id=about>
+            <img class="col-3" src="./media/david_baird.jpg">
+            <div class="col-6 about-text-container">
                 <h1>A personal word...</h1>
                     <p class="about-text">
                         I have always had a deep love for the Word of God/Christ and it is my greatest joy to meditate upon them in the presence of the Holy Spirit and listen for His voice.  I have always been drawn to ask questions regarding accepted norms, dogma and traditional interpretations of various biblical subjects that have been handed down through generations. 
@@ -189,10 +196,38 @@
                     </p>
             </div>
         </div>
-        <footer>
-                <h1>Follow us on</h1>
-                <a>Facebook</a>
-                <a>Instagram</a>
+        <footer class="col-12">
+            <ul>
+                <li>
+                    <a>
+                        <svg id="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <defs>
+                                <style>.cls-1{fill:none;}</style>
+                            </defs>
+                            <title>email</title>
+                            <path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6ZM25.8,8,16,14.78,6.2,8ZM4,24V8.91l11.43,7.91a1,1,0,0,0,1.14,0L28,8.91V24Z" transform="translate(0)"/>
+                            <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.cls-1{fill:none;}</style></defs><title>logo--facebook</title><path d="M26.67,4H5.33A1.34,1.34,0,0,0,4,5.33V26.67A1.34,1.34,0,0,0,5.33,28H16.82V18.72H13.7V15.09h3.12V12.42c0-3.1,1.89-4.79,4.67-4.79.93,0,1.86,0,2.79.14V11H22.37c-1.51,0-1.8.72-1.8,1.77v2.31h3.6l-.47,3.63H20.57V28h6.1A1.34,1.34,0,0,0,28,26.67V5.33A1.34,1.34,0,0,0,26.67,4Z" transform="translate(0 0)"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg id="yt-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <defs>
+                                <style>.cls-1{fill:none;}</style>
+                            </defs>
+                            <title>logo--youtube</title>
+                            <path d="M29.41,9.26a3.5,3.5,0,0,0-2.47-2.47C24.76,6.2,16,6.2,16,6.2s-8.76,0-10.94.59A3.5,3.5,0,0,0,2.59,9.26,36.13,36.13,0,0,0,2,16a36.13,36.13,0,0,0,.59,6.74,3.5,3.5,0,0,0,2.47,2.47C7.24,25.8,16,25.8,16,25.8s8.76,0,10.94-.59a3.5,3.5,0,0,0,2.47-2.47A36.13,36.13,0,0,0,30,16,36.13,36.13,0,0,0,29.41,9.26ZM13.2,20.2V11.8L20.47,16Z"/>
+                            <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </footer>
         <script src="main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
