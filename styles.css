@@ -215,7 +215,7 @@ a, button:hover {
     padding-right: 72px;
 }
 
-.see-all {
+.see-all a {
     margin-top: 16px;
     width: 80px;
     color: #AC231F;
@@ -298,11 +298,11 @@ a, button:hover {
 
 /* ABOUT */
 .about-container {
-    margin-left: 72px;
+    padding-left: 72px;
 }
 
 .about-container img  {
-    width: 30%;
+    width: 31.7%;
 }
 
 .about-text-container  {

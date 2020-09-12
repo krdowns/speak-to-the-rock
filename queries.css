@@ -1,3 +1,204 @@
+@media (max-width: 1750px) {
+    .wlr-container {
+        margin-top: -72px;
+        margin-bottom: 72px;
+    }
+
+    .listen-container {
+        height: 240px;
+    }
+
+    .audio-player {
+        height: fit-content;
+        padding-bottom: 72px;
+    }
+
+    #play-btn, #play-btn2, #play-btn3 {
+        margin-right: 16px !important;
+        min-width: 40px !important;
+        margin-left: 16px !important;
+    }
+}
+
+@media (max-width: 1530px) {
+    .listen-container {
+        height: 260px;
+    }
+}
+
+@media (max-width: 1353px) {
+    .welcome-container {
+        margin-top: -10%;
+    }
+
+    .video-container-text {
+        margin-left: 2.5%;
+        width: 40%;
+    }
+
+    .video-header {
+        width: fit-content;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 1020px) {
+    .video-header {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+
+    .video-body-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .message-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 910px) {
+    [class*="col-"] {
+        float: left;
+        width: 100%;
+      }
+
+    .welcome-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .welcome-container iframe {
+        margin: 0 auto;
+    }
+
+    .video-container-text {
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    .wlr-container {
+        margin-top: 0px;
+    }
+
+    .wlr-header2-container, .wlr-header-container {
+        padding: 0;
+        margin: 36px auto;
+        width: 100%;
+    }
+
+    .wlr-header2, .wlr-header {
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .see-all {
+        display: none;
+    }
+
+    .watch-container {
+        flex-direction: column;
+        align-items: center;       
+        padding: 0; 
+    }
+
+    .watch-container .wlr {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .video1, .video2, .video3 {
+        height: fit-content;
+        padding-top: 75%;
+    }
+
+    .video2, .video3 {
+        margin-left: 0;
+    }
+
+    .video1, .video2 {
+        padding-top: 56.25%;
+        margin-bottom: 20px;
+    }
+
+    .video3 {
+        margin-bottom: 0;
+    }
+
+    .listen-container {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .audio1 {
+        width: 100%;
+        margin-top: 48px;
+    }
+
+    .audio2, .audio3 {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 16px;
+    }
+    
+    .audio-list-container {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .audio-player {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .message-text-container {
+        height: fit-content;
+    }
+
+    .message-text {
+        height: fit-content;
+    }
+
+    .player-controls {
+        padding-bottom: 0;
+        height: 300px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+        margin: 32px auto;
+    }
+
+    .about-container img {
+        margin-left: 37.5%;
+        width: 30%;
+        order: 4;
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 24px;
+        order: 1;
+    }
+
+    .about-text {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+
 @media (max-width: 480px) {
     [class*="col-"] {
         float: left;
@@ -13,14 +214,21 @@
 
     /* HERO */
 
-    .hero-text {
-        transform: scale(.4, .4);
-        width: 100%;
-        display: none;
+    .hero-section {
+        height: 100%;
+        /* border: 2px solid orange; */
+        margin-bottom: -150px;
+        /* padding-bottom: 90px; */
     }
 
-    .hero-section {
-        height: 0px;
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        transform: scale(.4, .4);
+        width: 100%;
+        margin: 0 auto;
+        /* border: 2px solid yellow; */
+        justify-content: center;
     }
 
     .header-container {
@@ -28,12 +236,16 @@
         flex-direction: row;
         margin-left: 0px;
         margin-top: 0px;
+        width: 100%;
+        /* border: 2px solid orange; */
     }
 
     .speak-container {
         font-family: "BebasNeue-book";
+        width: 100%;
         font-size: 76px;
         margin-top: 0px;
+        margin-left: -20px;
     }
 
     .to-the-container {
@@ -146,6 +358,7 @@
         justify-content: center;
         align-items: center;
         padding: 0;
+        height: fit-content;
     }
 
     .watch-container iframe {
@@ -158,16 +371,113 @@
         width: 100%;
         height: auto;
         margin-left: 0;
-        padding-top: 100%;
         position: relative;
         height: fit-content;
     }
 
-    .video2 {
-        padding-top: 200px;
+    .video1, .video2 {
+        padding-top: 56.25%;
+    }
+
+    .video3 {
+        padding-top: 75%;
     }
 
     /* LISTEN */
+
+    .listen-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .wlr-header {
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .audio1, .audio2, .audio3 {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 100%;
+    }
+    
+    .audio2, .audio3 {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .audio-player {
+        text-align: left;
+        font-size: 12px;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+
+    .player-controls h1 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #161616;
+        font-weight: bolder;
+        padding-top: 36px;
+    }
+      
+    .player-controls {
+        width: 100%;
+    }
+    
+    .message-text-container {
+        width: 90%;
+    }
+    
+    .message-text {
+    text-align: left;
+    font-family: "IBM Plex Sans"; 
+    font-size: 14px;
+    line-height: 18px;
+    width: 80%;
+    color: #393939;
+    }
+    
+    progress {
+    width: 80%;
+    }
+    
+    
+    .timer-container {
+        width: 80%;
+        font-family: "IBM Plex Sans";
+    }
+    
+    #start-time, #start-time2, #start-time3 {
+        float: left; position: relative;
+        margin-top: 5px;
+        margin-left: 2px;
+        font-size: 10px;
+    }
+    
+    #end-time, #end-time2, #end-time3 {
+        float: right; position: relative;
+        margin-top: 5px;
+        margin-right: 0;  
+        font-size: 10px;
+    }
+    
+    .audio-player #play-btn, #play-btn2, #play-btn3{
+        background-image: url("./media/play.svg");
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        padding: 24px 24px 24px 24px;
+    }
+    
 
     /* ABOUT */
 
@@ -186,7 +496,7 @@
     }
 
     .about-text-container h1 {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 12px;
         margin-top:  12px;
     }
@@ -194,18 +504,18 @@
     .about-text-container p {
         margin-bottom: 16px;
         margin-top: 8px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 22px;
         text-align: left;
     }
 
     .about-text {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 22px;
     }
 
     .divider {
-        width: 300px;
+        width: 150px;
         height: 2px;
         background-color: #000;
         margin: 32px 0;
