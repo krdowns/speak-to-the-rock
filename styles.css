@@ -135,7 +135,7 @@ a, button:hover {
 .hero-subtext p {
     font-family: "IBM Plex Sans", sans-serif;
     margin-top: -72px;
-    width: 324px;
+    width: 420px;
     line-height: 26px;
     font-size: 20px;
     padding-left: 72px;
@@ -170,8 +170,12 @@ a, button:hover {
     font-family: "IBM Plex Sans", sans-serif;
     display: flex;
     flex-direction: column;
-    margin-left: 4%;
+    margin-left: 150px;
     justify-content: center;
+}
+
+.video-container {
+    border: 2px solid blue;
 }
 
 .video-header {
@@ -181,7 +185,7 @@ a, button:hover {
 }
 
 .video-body-text {
-    width: 100%;
+    width: 70%;
     line-height: 26px;
     font-size: 20px;
 }
