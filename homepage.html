@@ -4,11 +4,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Speak To The Rock Ministries</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="audioplayer.css">
-        <link rel="stylesheet" href="queries.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/audioplayer.css">
+        <link rel="stylesheet" href="./styles/queries.css">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     </head>
     <body>
@@ -16,7 +16,7 @@
             <ul class="left-nav col-2">
                 <li>
                     <a href="./homepage.html">
-                        <img class="logo" src="./media/str-logo.png">
+                        <img class="logo" src="./styles/media/str-logo.png">
                     </a>
                 </li>
             </ul>
@@ -63,7 +63,7 @@
                 </p>
                 <button id="buy-button">
                     <a href="https://www.amazon.com/dp/B074PYWTMB/ref=rdr_kindle_ext_tmb">
-                        <img src="./media/buy-book.png">
+                        <img src="./styles/media/buy-book.png">
                     </a></button>
             </div>
         </div>
@@ -102,7 +102,7 @@
                                 <div id="play-btn" class="play"></div>
                                 <div class="audio-wrapper" id="player-container" href="javascript:;">
                                     <audio id="player" ontimeupdate="initProgressBar()">
-                                        <source src="./media/Jul08.mp3" type="audio/mp3">
+                                        <source src="./styles/media/Jul08.mp3" type="audio/mp3">
                                     </audio>
                                 </div>
                                 <div class="player-controls scrubber">
@@ -128,7 +128,7 @@
                             <div id="play-btn2" class="play"></div>
                             <div class="audio-wrapper" id="player-container2" href="javascript:;">
                                 <audio id="player2" ontimeupdate="initProgressBar2()">
-                                    <source src="./media/Jul19.mp3" type="audio/mp3">
+                                    <source src="./styles/media/Jul19.mp3" type="audio/mp3">
                                 </audio>
                             </div>
                             <div class="player-controls scrubber">
@@ -153,7 +153,7 @@
                             <div id="play-btn3" class="play"></div>
                             <div class="audio-wrapper" id="player-container3" href="javascript:;">
                                 <audio id="player3" ontimeupdate="initProgressBar3()">
-                                    <source src="./media/Jul22.mp3" type="audio/mp3">
+                                    <source src="./styles/media/Jul22.mp3" type="audio/mp3">
                                 </audio>
                             </div>
                             <div class="player-controls scrubber">
@@ -177,7 +177,7 @@
         </div>
 
         <div class="about-container col-12 row" id=about>
-            <img class="col-3" src="./media/david_baird.jpg">
+            <img class="col-3" src="./styles/media/david_baird.jpg">
             <div class="col-6 about-text-container">
                 <h1>A personal word...</h1>
                     <p class="about-text">
@@ -229,9 +229,9 @@
                 </li>
             </ul>
         </footer>
-        <script src="main.js"></script>
+        <script src="./scripts/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="audioplayer.js"></script>
+        <script src="./scripts/audioplayer.js"></script>
 
     </body>
 </html>
