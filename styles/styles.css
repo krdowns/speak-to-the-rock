@@ -201,7 +201,7 @@ a, button:hover {
     width: 124px;
 }
 
-/* WATCH/LISTEN*/
+/* WATCH/LISTEN */
 
 .wlr-container {
     margin-top: 48px;
@@ -260,14 +260,14 @@ a, button:hover {
     padding-right: 72px;
 }
 
-.video1, .video2, .video3 {
+.video1, .video2, .video3, .video4 {
     position: relative;
     overflow: hidden;
     width: 33%;
     padding-top: 16.875%;
 }
 
-.video1 iframe, .video2 iframe, .video3 iframe {
+.video1 iframe, .video2 iframe, .video3 iframe, .video4 iframe {
     position: absolute;
     top: 0;
     left: 0;

@@ -632,14 +632,12 @@
 
     .about-container {
         margin-left: 0px;
-        /* border:2px solid blue; */
         max-width: 100%;
         padding: 5% 0;
         margin-top: 120%;
     }
 
     .about-container img {
-
         width: 50%;
         margin-left: 24%;
     }
@@ -663,7 +661,6 @@
         font-size: 14px;
         line-height: 22px;
         text-align: left;
-        /* border: 2px solid orange; */
     }
 
     .about-text {

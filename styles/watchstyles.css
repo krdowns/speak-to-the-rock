@@ -1,0 +1,25 @@
+.watch-container {
+    margin-top: 40px;
+}
+
+.watch-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin-top: 32px;
+}
+
+.video1, .video2, .video3, .video4 {
+    width: 640px;
+    height: 320px;
+}
+
+.video2, .video4 {
+    margin-left: 32px;
+}
+
+.video3 {
+    margin-left: 0%;
+}
