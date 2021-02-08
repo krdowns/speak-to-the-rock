@@ -175,19 +175,26 @@ a, button:hover {
 }
 
 .video-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .video-header {
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 8px;
+    margin-top: 102px;
+}
+
+.video-subheader {
+    font-size: 24px;
+    margin-top: 8px;
 }
 
 .video-body-text {
     width: 70%;
+    margin-top: 12px;
     line-height: 26px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #buy-button {
@@ -243,7 +250,7 @@ a, button:hover {
     align-items: center;
     padding-left: 72px;
     padding-right: 72px;
-    margin-top: 36px;
+    margin-top: 66px;
     margin-bottom: 24px;
 }
 

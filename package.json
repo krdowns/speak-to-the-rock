@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/krdowns/speak-to-the-rock#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "stripe": "^8.130.0"
   }
 }

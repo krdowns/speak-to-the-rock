@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/audioplayer.css">
+        <link rel="stylesheet" href="./styles/listenstyles.css">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     </head>
     <body>
@@ -28,7 +29,248 @@
                 <li><a  href="./listen.html">Listen</a></li>
             </ul>
         </nav>
+
+        <div class="listen-container row">
+            <div class="wlr wlr-1 audio1">
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./styles/media/Oct 17_32kbs.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="player-controls scrubber">
+                                <h1>October 17, 2018<small></small></h1>
+                                <div class="message-text-container">
+                                    <p class="message-text"></p>
+                                </div>
+                                
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time">00:00</small>
+                                    <small id="end-time">53:19</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="wlr wlr-2 audio2">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn2" class="play"></div>
+                        <div class="audio-wrapper" id="player-container2" href="javascript:;">
+                            <audio id="player2" ontimeupdate="initProgressBar2()">
+                                <source src="./styles/media/Oct 24_32kbs.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>October 24, 2018<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text"></p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj2" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time2">00:00</small>
+                                <small id="end-time2">66:25</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wlr wlr-3 audio3">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn3" class="play"></div>
+                        <div class="audio-wrapper" id="player-container3" href="javascript:;">
+                            <audio id="player3" ontimeupdate="initProgressBar3()">
+                                <source src="./styles/media/Oct 31_32kbs.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>October 31, 2018<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text">
+                                </p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj3" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time3">00:00</small>
+                                <small id="end-time3">44:37</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listen-container row2">
+            <div class="wlr wlr-1 audio1">
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./styles/media/Jul08.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="player-controls scrubber">
+                                <h1>Speak To The Rock<small></small></h1>
+                                <div class="message-text-container">
+                                    <p class="message-text">This message is so significant to me that we chose it for the name of our ministry.  It is one of the most powerful New Testament revelations foreshadowed in the Old Testament and is a foundational truth for our lives.</p>
+                                </div>
+                                
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time">00:00</small>
+                                    <small id="end-time">53:19</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="wlr wlr-2 audio2">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn2" class="play"></div>
+                        <div class="audio-wrapper" id="player-container2" href="javascript:;">
+                            <audio id="player2" ontimeupdate="initProgressBar2()">
+                                <source src="./styles/media/Jul19.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>Today If You Will Hear His Voice<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text">Hebrews 4: 11-13 is one of the richest portions of scripture in the entire Word of God.  Again... I believe it has been misunderstood and the powerful truth within lays in the shadows as a result.   This truth will change your life. </p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj2" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time2">00:00</small>
+                                <small id="end-time2">66:25</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wlr wlr-3 audio3">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn3" class="play"></div>
+                        <div class="audio-wrapper" id="player-container3" href="javascript:;">
+                            <audio id="player3" ontimeupdate="initProgressBar3()">
+                                <source src="./styles/media/Jul22.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>The Truth About "All Things Work Together for Good"<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text">The way Romans 8:28 has been interpreted for generations has hidden the higher meaning and power of this truth...and it is not what we have been told by tradition all these years.
+                                </p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj3" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time3">00:00</small>
+                                <small id="end-time3">44:37</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listen-container row3">
+            <div class="wlr wlr-1 audio1">
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./styles/media/Jul08.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="player-controls scrubber">
+                                <h1>Speak To The Rock<small></small></h1>
+                                <div class="message-text-container">
+                                    <p class="message-text">This message is so significant to me that we chose it for the name of our ministry.  It is one of the most powerful New Testament revelations foreshadowed in the Old Testament and is a foundational truth for our lives.</p>
+                                </div>
+                                
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time">00:00</small>
+                                    <small id="end-time">53:19</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="wlr wlr-2 audio2">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn2" class="play"></div>
+                        <div class="audio-wrapper" id="player-container2" href="javascript:;">
+                            <audio id="player2" ontimeupdate="initProgressBar2()">
+                                <source src="./styles/media/Jul19.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>Today If You Will Hear His Voice<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text">Hebrews 4: 11-13 is one of the richest portions of scripture in the entire Word of God.  Again... I believe it has been misunderstood and the powerful truth within lays in the shadows as a result.   This truth will change your life. </p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj2" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time2">00:00</small>
+                                <small id="end-time2">66:25</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wlr wlr-3 audio3">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn3" class="play"></div>
+                        <div class="audio-wrapper" id="player-container3" href="javascript:;">
+                            <audio id="player3" ontimeupdate="initProgressBar3()">
+                                <source src="./styles/media/Jul22.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>The Truth About "All Things Work Together for Good"<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text">The way Romans 8:28 has been interpreted for generations has hidden the higher meaning and power of this truth...and it is not what we have been told by tradition all these years.
+                                </p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj3" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time3">00:00</small>
+                                <small id="end-time3">44:37</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
         
         <script src="" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./scripts/audioplayer.js"></script>
     </body>
 </html>
