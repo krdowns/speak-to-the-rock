@@ -16,10 +16,22 @@
 
 .player-controls h1 {
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   color: #161616;
   font-weight: bolder;
   padding-top: 36px;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 310px;
+  line-height: 20px;
+}
+
+.player-controls h1:hover {
+  overflow: visible;
+  white-space: normal;
+  line-break: none;
 }
 
 .audio-player .player-controls {
@@ -37,34 +49,26 @@
   height: fit-content;
   padding-bottom: 10%;
   width: 90%;
-  /* border: 2px solid green; */
 }
 
 .message-text-container {
   width: 100%;
-  /* border: 2px solid orange; */
 }
 
 .message-text {
   text-align: left;
   font-family: "IBM Plex Sans"; 
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   width: 90%;
-  /* border: 2px solid blue; */
   color: #393939;
+  margin-bottom: 16px;
 }
 
 progress {
   width: 90%;
-  margin-top: 16px;
+  margin-top: 8px;
 }
-
-/* .audio-player .player-controls progress {
-  width: 80%;
-  margin-top: 10px;
-  margin-left: -20px;
-} */
 
 .audio-player .player-controls progress[value] {
   -webkit-appearance: none;
@@ -88,23 +92,26 @@ progress {
 .timer-container {
   width: 90%;
   font-family: "IBM Plex Sans";
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
 }
 
-#start-time, #start-time2, #start-time3 {
+.start-time {
   float: left; position: relative;
   margin-top: 5px;
   margin-left: 2px;
   font-size: 10px;
 }
 
-#end-time, #end-time2, #end-time3 {
+.end-time {
   float: right; position: relative;
   margin-top: 5px;
   margin-right: 0;  
   font-size: 10px;
 }
 
-.audio-player #play-btn, #play-btn2, #play-btn3{
+.audio-player #play-btn, #play-btn2, #play-btn3 {
   background-image: url("./media/play.svg");
   background-size: cover;
   width: 40px;
@@ -112,34 +119,13 @@ progress {
   margin: 24px 16px 0 24px;
 }
 
-.audio-player #play-btn.pause {
+.audio-player #play-btn.pause, .audio-player #play-btn2.pause, .audio-player #play-btn3.pause {
   background-image: url("./media/pause.svg");
   background-size: cover;
   width: 40px;
   height: 40px;
 }
 
-.audio-player #play-btn2.pause {
-  background-image: url("./media/pause.svg");
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-}
-
-.audio-player #play-btn3.pause {
-  background-image: url("./media/pause.svg");
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-}
-
-#play-btn:hover {
-  cursor: pointer;
-}
-
-#play-btn2:hover {
-  cursor: pointer;
-}
-#play-btn3:hover {
+.play:hover {
   cursor: pointer;
 }

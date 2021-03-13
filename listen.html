@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/audioplayer.css">
         <link rel="stylesheet" href="./styles/listenstyles.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     </head>
     <body>
@@ -30,14 +31,14 @@
             </ul>
         </nav>
 
-        <div class="listen-container row">
+        <!-- <div class="listen-container row">
             <div class="wlr wlr-1 audio1">
                     <div class="audio-list-container">
                         <div class="audio-player">
                             <div id="play-btn" class="play"></div>
                             <div class="audio-wrapper" id="player-container" href="javascript:;">
                                 <audio id="player" ontimeupdate="initProgressBar()">
-                                    <source src="./styles/media/Oct 17_32kbs.mp3" type="audio/mp3">
+                                    <source src="./styles/media/Oct17.mp3" type="audio/mp3">
                                 </audio>
                             </div>
                             <div class="player-controls scrubber">
@@ -50,8 +51,8 @@
                                     <progress id="seek-obj" value="0" max="1"></progress>
                                 </span>
                                 <div class="timer-container">
-                                    <small id="start-time">00:00</small>
-                                    <small id="end-time">53:19</small>
+                                    <small id="start-time" class="start-time">00:00</small>
+                                    <small id="end-time" class="end-time">53:19</small>
                                 </div>
                             </div>
                         </div>
@@ -62,8 +63,8 @@
                     <div class="audio-player">
                         <div id="play-btn2" class="play"></div>
                         <div class="audio-wrapper" id="player-container2" href="javascript:;">
-                            <audio id="player2" ontimeupdate="initProgressBar2()">
-                                <source src="./styles/media/Oct 24_32kbs.mp3" type="audio/mp3">
+                            <audio id="player2" ontimeupdate="initProgressBar(this)">
+                                <source src="./styles/media/Oct24.mp3" type="audio/mp3">
                             </audio>
                         </div>
                         <div class="player-controls scrubber">
@@ -75,8 +76,8 @@
                                 <progress id="seek-obj2" value="0" max="1"></progress>
                             </span>
                             <div class="timer-container">
-                                <small id="start-time2">00:00</small>
-                                <small id="end-time2">66:25</small>
+                                <small id="start-time2" class="start-time">00:00</small>
+                                <small id="end-time2" class="end-time">66:25</small>
                             </div>
                         </div>
                     </div>
@@ -87,8 +88,8 @@
                     <div class="audio-player">
                         <div id="play-btn3" class="play"></div>
                         <div class="audio-wrapper" id="player-container3" href="javascript:;">
-                            <audio id="player3" ontimeupdate="initProgressBar3()">
-                                <source src="./styles/media/Oct 31_32kbs.mp3" type="audio/mp3">
+                            <audio id="player3" ontimeupdate="initProgressBar(this)">
+                                <source src="./styles/media/Oct31.mp3" type="audio/mp3">
                             </audio>
                         </div>
                         <div class="player-controls scrubber">
@@ -101,8 +102,8 @@
                                 <progress id="seek-obj3" value="0" max="1"></progress>
                             </span>
                             <div class="timer-container">
-                                <small id="start-time3">00:00</small>
-                                <small id="end-time3">44:37</small>
+                                <small id="start-time3" class="start-time">00:00</small>
+                                <small id="end-time3" class="end-time">44:37</small>
                             </div>
                         </div>
                     </div>
@@ -110,27 +111,27 @@
             </div>
         </div>
         <div class="listen-container row2">
-            <div class="wlr wlr-1 audio1">
+                <div class="wlr wlr-1 audio1">
                     <div class="audio-list-container">
                         <div class="audio-player">
-                            <div id="play-btn" class="play"></div>
-                            <div class="audio-wrapper" id="player-container" href="javascript:;">
-                                <audio id="player" ontimeupdate="initProgressBar()">
+                            <div id="play-btn4" class="play"></div>
+                            <div class="audio-wrapper" id="player-container4" href="javascript:;">
+                                <audio id="player4" ontimeupdate="initProgressBar4()">
                                     <source src="./styles/media/Jul08.mp3" type="audio/mp3">
                                 </audio>
                             </div>
                             <div class="player-controls scrubber">
-                                <h1>Speak To The Rock<small></small></h1>
+                                <h1>July 8th, 2019<small></small></h1>
                                 <div class="message-text-container">
-                                    <p class="message-text">This message is so significant to me that we chose it for the name of our ministry.  It is one of the most powerful New Testament revelations foreshadowed in the Old Testament and is a foundational truth for our lives.</p>
+                                    <p class="message-text"></p>
                                 </div>
                                 
                                 <span id="seek-obj-container">
-                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                    <progress id="seek-obj4" value="0" max="1"></progress>
                                 </span>
                                 <div class="timer-container">
-                                    <small id="start-time">00:00</small>
-                                    <small id="end-time">53:19</small>
+                                    <small id="start-time4" class="start-time">00:00</small>
+                                    <small id="end-time4" class="end-time">53:19</small>
                                 </div>
                             </div>
                         </div>
@@ -139,23 +140,23 @@
             <div class="wlr wlr-2 audio2">
                 <div class="audio-list-container">
                     <div class="audio-player">
-                        <div id="play-btn2" class="play"></div>
-                        <div class="audio-wrapper" id="player-container2" href="javascript:;">
-                            <audio id="player2" ontimeupdate="initProgressBar2()">
+                        <div id="play-btn5" class="play"></div>
+                        <div class="audio-wrapper" id="player-container5" href="javascript:;">
+                            <audio id="player5" ontimeupdate="initProgressBar5(this)">
                                 <source src="./styles/media/Jul19.mp3" type="audio/mp3">
                             </audio>
                         </div>
                         <div class="player-controls scrubber">
-                            <h1>Today If You Will Hear His Voice<small></small></h1>
+                            <h1>July 19th, 2018<small></small></h1>
                             <div class="message-text-container">
-                                <p class="message-text">Hebrews 4: 11-13 is one of the richest portions of scripture in the entire Word of God.  Again... I believe it has been misunderstood and the powerful truth within lays in the shadows as a result.   This truth will change your life. </p>
+                                <p class="message-text"></p>
                             </div>
                             <span id="seek-obj-container">
-                                <progress id="seek-obj2" value="0" max="1"></progress>
+                                <progress id="seek-obj5" value="0" max="1"></progress>
                             </span>
                             <div class="timer-container">
-                                <small id="start-time2">00:00</small>
-                                <small id="end-time2">66:25</small>
+                                <small id="start-time5" class="start-time">00:00</small>
+                                <small id="end-time5" class="end-time">66:25</small>
                             </div>
                         </div>
                     </div>
@@ -171,17 +172,17 @@
                             </audio>
                         </div>
                         <div class="player-controls scrubber">
-                            <h1>The Truth About "All Things Work Together for Good"<small></small></h1>
+                            <h1>July 22nd, 2018<small></small></h1>
                             <div class="message-text-container">
-                                <p class="message-text">The way Romans 8:28 has been interpreted for generations has hidden the higher meaning and power of this truth...and it is not what we have been told by tradition all these years.
+                                <p class="message-text">
                                 </p>
                             </div>
                             <span id="seek-obj-container">
                                 <progress id="seek-obj3" value="0" max="1"></progress>
                             </span>
                             <div class="timer-container">
-                                <small id="start-time3">00:00</small>
-                                <small id="end-time3">44:37</small>
+                                <small id="start-time3" class="start-time">00:00</small>
+                                <small id="end-time3" class="end-time">44:37</small>
                             </div>
                         </div>
                     </div>
@@ -195,21 +196,21 @@
                             <div id="play-btn" class="play"></div>
                             <div class="audio-wrapper" id="player-container" href="javascript:;">
                                 <audio id="player" ontimeupdate="initProgressBar()">
-                                    <source src="./styles/media/Jul08.mp3" type="audio/mp3">
+                                    <source src="./styles/media/Jan09.mp3" type="audio/mp3">
                                 </audio>
                             </div>
                             <div class="player-controls scrubber">
-                                <h1>Speak To The Rock<small></small></h1>
+                                <h1>January 9th, 2019<small></small></h1>
                                 <div class="message-text-container">
-                                    <p class="message-text">This message is so significant to me that we chose it for the name of our ministry.  It is one of the most powerful New Testament revelations foreshadowed in the Old Testament and is a foundational truth for our lives.</p>
+                                    <p class="message-text"></p>
                                 </div>
                                 
                                 <span id="seek-obj-container">
                                     <progress id="seek-obj" value="0" max="1"></progress>
                                 </span>
                                 <div class="timer-container">
-                                    <small id="start-time">00:00</small>
-                                    <small id="end-time">53:19</small>
+                                    <small id="start-time" class="start-time">00:00</small>
+                                    <small id="end-time" class="end-time">53:19</small>
                                 </div>
                             </div>
                         </div>
@@ -221,20 +222,20 @@
                         <div id="play-btn2" class="play"></div>
                         <div class="audio-wrapper" id="player-container2" href="javascript:;">
                             <audio id="player2" ontimeupdate="initProgressBar2()">
-                                <source src="./styles/media/Jul19.mp3" type="audio/mp3">
+                                <source src="./styles/media/Jan23.mp3" type="audio/mp3">
                             </audio>
                         </div>
                         <div class="player-controls scrubber">
-                            <h1>Today If You Will Hear His Voice<small></small></h1>
+                            <h1>January 23rd, 2019<small></small></h1>
                             <div class="message-text-container">
-                                <p class="message-text">Hebrews 4: 11-13 is one of the richest portions of scripture in the entire Word of God.  Again... I believe it has been misunderstood and the powerful truth within lays in the shadows as a result.   This truth will change your life. </p>
+                                <p class="message-text"></p>
                             </div>
                             <span id="seek-obj-container">
                                 <progress id="seek-obj2" value="0" max="1"></progress>
                             </span>
                             <div class="timer-container">
-                                <small id="start-time2">00:00</small>
-                                <small id="end-time2">66:25</small>
+                                <small id="start-time2" class="start-time">00:00</small>
+                                <small id="end-time2" class="end-time">66:25</small>
                             </div>
                         </div>
                     </div>
@@ -246,31 +247,463 @@
                         <div id="play-btn3" class="play"></div>
                         <div class="audio-wrapper" id="player-container3" href="javascript:;">
                             <audio id="player3" ontimeupdate="initProgressBar3()">
-                                <source src="./styles/media/Jul22.mp3" type="audio/mp3">
+                                <source src="./styles/media/Jan30.mp3" type="audio/mp3">
                             </audio>
                         </div>
                         <div class="player-controls scrubber">
-                            <h1>The Truth About "All Things Work Together for Good"<small></small></h1>
+                            <h1>January 30th, 2019<small></small></h1>
                             <div class="message-text-container">
-                                <p class="message-text">The way Romans 8:28 has been interpreted for generations has hidden the higher meaning and power of this truth...and it is not what we have been told by tradition all these years.
+                                <p class="message-text">
                                 </p>
                             </div>
                             <span id="seek-obj-container">
                                 <progress id="seek-obj3" value="0" max="1"></progress>
                             </span>
                             <div class="timer-container">
-                                <small id="start-time3">00:00</small>
-                                <small id="end-time3">44:37</small>
+                                <small id="start-time3" class="start-time">00:00</small>
+                                <small id="end-time3" class="end-time">44:37</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="listen-container row4">
+            <div class="wlr wlr-1 audio1">
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./styles/media/Apr03.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="player-controls scrubber">
+                                <h1>April 3rd, 2019<small></small></h1>
+                                <div class="message-text-container">
+                                    <p class="message-text"></p>
+                                </div>
+                                
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time" class="start-time">00:00</small>
+                                    <small id="end-time" class="end-time">53:19</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="wlr wlr-2 audio2">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn2" class="play"></div>
+                        <div class="audio-wrapper" id="player-container2" href="javascript:;">
+                            <audio id="player2" ontimeupdate="initProgressBar2()">
+                                <source src="./styles/media/Apr10.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>April 10th, 2019<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text"></p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj2" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time2" class="start-time">00:00</small>
+                                <small id="end-time2" class="end-time">66:25</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wlr wlr-3 audio3">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn3" class="play"></div>
+                        <div class="audio-wrapper" id="player-container3" href="javascript:;">
+                            <audio id="player3" ontimeupdate="initProgressBar3()">
+                                <source src="./styles/media/Apr17.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>April 17th, 2019<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text">
+                                </p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj3" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time3" class="start-time">00:00</small>
+                                <small id="end-time3" class="end-time">44:37</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listen-container row5">
+            <div class="wlr wlr-1 audio1">
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./styles/media/May08.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="player-controls scrubber">
+                                <h1>May 8th, 2019<small></small></h1>
+                                <div class="message-text-container">
+                                    <p class="message-text"></p>
+                                </div>
+                                
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time" class="start-time">00:00</small>
+                                    <small id="end-time" class="end-time">53:19</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="wlr wlr-2 audio2">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn2" class="play"></div>
+                        <div class="audio-wrapper" id="player-container2" href="javascript:;">
+                            <audio id="player2" ontimeupdate="initProgressBar2()">
+                                <source src="./styles/media/May15.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>May 15, 2019<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text"></p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj2" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time2" class="start-time">00:00</small>
+                                <small id="end-time2" class="end-time">66:25</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wlr wlr-3 audio3">
+                <div class="audio-list-container">
+                    <div class="audio-player">
+                        <div id="play-btn3" class="play"></div>
+                        <div class="audio-wrapper" id="player-container3" href="javascript:;">
+                            <audio id="player3" ontimeupdate="initProgressBar3()">
+                                <source src="./styles/media/May22.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="player-controls scrubber">
+                            <h1>October 31, 2018<small></small></h1>
+                            <div class="message-text-container">
+                                <p class="message-text">
+                                </p>
+                            </div>
+                            <span id="seek-obj-container">
+                                <progress id="seek-obj3" value="0" max="1"></progress>
+                            </span>
+                            <div class="timer-container">
+                                <small id="start-time3" class="start-time">00:00</small>
+                                <small id="end-time3" class="end-time">44:37</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listen-container row6">
+            <div class="wlr wlr-1 audio1">
+                    <div class="audio-list-container">
+                        <div class="audio-player">
+                            <div id="play-btn" class="play"></div>
+                            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                <audio id="player" ontimeupdate="initProgressBar()">
+                                    <source src="./styles/media/Nov07.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="player-controls scrubber">
+                                <h1>November 7, 2018<small></small></h1>
+                                <div class="message-text-container">
+                                    <p class="message-text"></p>
+                                </div>
+                                
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                                <div class="timer-container">
+                                    <small id="start-time" class="start-time">00:00</small>
+                                    <small id="end-time" class="end-time">53:19</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div> -->
+
+        <!-- <div id="audio_list">
+            <audio controls autoplay></audio>
+        </div> -->
             
+        <div class="container">
+
+            <audio id="audio" preload="none" tabindex="0">
+                <source src="./styles/media/Jan09.mp3" data-track-number="1" />
+                <source src="./styles/media/Jan23.mp3" data-track-number="2" />
+                <source src="./styles/media/Jan30.mp3" data-track-number="3" />
+                <source src="./styles/media/Apr03.mp3" data-track-number="4" />
+                <source src="./styles/media/Apr10.mp3" data-track-number="5" />    
+                <source src="./styles/media/Apr17.mp3" data-track-number="6" />
+                <source src="./styles/media/Apr24.mp3" data-track-number="7" />
+                <source src="./styles/media/May08.mp3" data-track-number="8" />
+                <source src="./styles/media/May15.mp3" data-track-number="9" />
+                <source src="./styles/media/May22.mp3" data-track-number="10" />
+                <source src="./styles/media/Jul08.mp3" data-track-number="11" />
+                <source src="./styles/media/Jul19.mp3" data-track-number="12" />
+                <source src="./styles/media/Jul22.mp3" data-track-number="13" />
+                <source src="./styles/media/Oct17.mp3" data-track-number="14" />
+                <source src="./styles/media/Oct24.mp3" data-track-number="15" />
+                <source src="./styles/media/Oct31.mp3" data-track-number="16" />
+                <source src="./styles/media/Nov07.mp3" data-track-number="17" />
+
+                          Your browser does not support HTML5 audio.
+            </audio>
+            <div class="player-container">
+                <div class="player">
+            
+                <div class="large-toggle-btn">
+                    <i class="large-play-btn"><span class="screen-reader-text">Large toggle button</span></i>
+                </div>
+                <!-- /.play-box -->
+            
+                <div class="info-box">
+                    <div class="track-info-box">
+                    <div class="track-title-text"></div>
+                    <div class="audio-time">
+                        <span class="current-time">00:00</span> /
+                        <span class="duration">00:00</span>
+                    </div>
+                    </div>
+                    <!-- /.info-box -->
+            
+                    <div class="progress-box">
+                    <div class="progress-cell">
+                        <div class="progress">
+                        <div class="progress-buffer"></div>
+                        <div class="progress-indicator"></div>
+                        </div>
+                    </div>
+                    </div>
+            
+                </div>
+                <!-- /.progress-box -->
+            
+                <div class="controls-box">
+                    <i class="previous-track-btn disabled"><span class="screen-reader-text">Previous track button</span></i>
+                    <i class="next-track-btn"><span class="screen-reader-text">Next track button</span></i>
+                </div>
+                <!-- /.controls-box -->
+            
+                </div>
+            </div>
+            <!-- /.player -->
+          
+            <div class="play-list">
+              <div class="play-list-row" data-track-row="1">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="1">January 9th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="2">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="2">January 23rd, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="3">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="3">January 30th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="4">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="4">April 3rd, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="5">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="5">April 10th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="6">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="6">April 17th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="7">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="7">April 24th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="8">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="8">May 8th 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="9">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="9">May 15th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="10">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="10">May 22nd, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="11">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="11">July 8th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="12">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="12">July 19th, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="13">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="13">July 22nd, 2019</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="14">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="14">October 17th, 2018</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="15">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="15">October 24th, 2018</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="16">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="16">October 31st, 2018</a>
+                </div>
+              </div>
+              <div class="play-list-row" data-track-row="17">
+                <div class="small-toggle-btn">
+                  <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+                </div>
+                <div class="track-number">
+                </div>
+                <div class="track-title">
+                  <a class="playlist-track" href="#" data-play-track="17">November 7th, 2018</a>
+                </div>
+              </div>
+
+          
+            </div>
         
         <script src="" async defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./scripts/audioplayer.js"></script>
+        <script src="./scripts/listen.js"></script>
     </body>
 </html>

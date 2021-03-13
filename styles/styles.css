@@ -89,7 +89,7 @@ a, button:hover {
 /* HERO */
 
 .hero-section {
-    height: 720px;
+    height: 651px;
 }
 
 .hero-text {
@@ -160,42 +160,50 @@ a, button:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 380px;
+    margin-bottom: 88px;
+    /* margin-top: -80px; */
+    /* padding-top: 64px; */
 }
 
 .welcome-container iframe {
     margin-left: 72px;
+    margin-top: 64px;
 }
+
 
 .video-container-text {
     font-family: "IBM Plex Sans", sans-serif;
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 250px;
+    margin-top: 88px;
     justify-content: center;
-}
-
-.video-container {
-    /* border: 2px solid blue; */
 }
 
 .video-header {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 8px;
-    margin-top: 102px;
+    margin-bottom: 4px;
+    margin-top: 0px;
 }
 
 .video-subheader {
-    font-size: 24px;
-    margin-top: 8px;
+    font-size: 20px;
+    /* margin-top: 8px; */
 }
 
 .video-body-text {
-    width: 70%;
-    margin-top: 12px;
+    width: 517px;
+    margin-top: 16px;
     line-height: 26px;
     font-size: 16px;
+    color: #393939;
 }
+select {
+    width: 124px;
+    height: 48px;
+ }
 
 #buy-button {
     border: none;
@@ -206,7 +214,82 @@ a, button:hover {
 
 #buy-button img {
     width: 124px;
+    z-index: 2;
+    margin-top: -64px;
 }
+
+#buy-button select:hover {
+    cursor: pointer;
+}
+
+/* Dropdown Button */
+.btn {
+    background-image: "./media/buy-book.png";
+    background-position: center;
+    color: white;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .btn img {
+      width: 120px;
+      margin: 0 auto;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #fff;
+    min-width: 320px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid #eee;
+  }
+
+  .dropdown-content img {
+      width: 100px;
+  }
+
+  .dropdown-columns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #fff}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .btn:hover, .dropdown:hover .btn  {
+    margin-left: 0px;
+  }
+
 
 /* WATCH/LISTEN */
 
@@ -310,6 +393,7 @@ a, button:hover {
 /* ABOUT */
 .about-container {
     padding-left: 72px;
+    margin-top: 36px;
 }
 
 .about-container img  {
@@ -326,6 +410,7 @@ a, button:hover {
     font-size: 32px;
     margin-bottom: 12px;
     margin-top:  12px;
+    color:#000;
 }
 
 .about-text-container p {

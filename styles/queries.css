@@ -26,7 +26,7 @@
     }
 
     .audio-player {
-        height: fit-content;
+        height: 270px;
         padding-bottom: 0px;
     }
 
@@ -448,10 +448,15 @@
     }
 
     .video-header {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 32px;
         margin-top: 8px;
         margin-bottom: 8px;
+        width: 100%;
+    }
+
+    .video-subheader {
+        font-size: 18px;
     }
 
     .video-body-text {
@@ -461,9 +466,25 @@
         font-size: 14px;
     }
 
-    #buy-button {
+    .dropdown-container {
         width: 100%;
-        background-color: transparent;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown {
+        margin: 0 auto;
+        justify-content: center;
+        /* border: 2px solid blue; */
+    }
+
+    .dropdown .btn {
+        margin: 48px auto;
+    }
+
+    .dropdown .btn:hover {
+        margin: 48px auto 16px;;
     }
 
 /* WATCH */

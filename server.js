@@ -57,16 +57,6 @@ app.post("/create-checkout-session", async (req, res) => {
         },
         quantity: 1,
       },
-      {
-        price_data: {
-          currency: "usd",
-          product_data: {
-            name: "Job Unseen E-Book",
-          },
-          unit_amount: 999,
-        },
-        quantity: 1,
-      },
     ],
     mode: "payment",
     success_url: "https://example.com/success",

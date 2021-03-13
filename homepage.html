@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/audioplayer.css">
         <link rel="stylesheet" href="./styles/queries.css">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://js.stripe.com/v3/"></script>
     </head>
     <body>
@@ -27,6 +28,7 @@
             <ul class="right-nav col-2">
                 <li><a href="./watch.html">Watch</a></li>
                 <li><a  href="./listen.html">Listen</a></li>
+                <li><a href="#">Give</a></li>
             </ul>
         </nav>
 
@@ -54,22 +56,52 @@
         </div>
 
         <div class="welcome-container row col-12">
-            <div id="video_container" class="col-6"> 
-                <iframe src="https://player.vimeo.com/video/228676448?title=0&byline=0&portrait=0"  width=600px height=600 frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div id="video_container" class="col-4"> 
+                <iframe src="https://player.vimeo.com/video/228676448?title=0&byline=0&portrait=0"  width=628px height=628 frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
-            <div class="video-container-text col-6">
+            <div class="video-container-text col-4">
                 <h2 class="video-header">What About Job?</h2>
                 <h3 class="video-subheader">What is the Purpose of the Book of Job?</h3>
                 <p class="video-body-text">
                     Is Job simply a message of the sovereignty and mysterious ways of God? Is the purpose of the book of Job only to be used as the default "go to" when we do not understand why things are going so terribly wrong? Has interpretations of Job confused you and caused you to draw wrong conclusions of the nature of our Father?
-
-                    Is there a higher, deeper meaning Job represents to the body of Christ? Yes...! Job Unseen answers all of these questions and shall become a source of faith, not a reinforcement of fatalism, confusion and unbelief.
+                    <br>
+                    <br>
+                    Is there a higher, deeper meaning Job represents to the body of Christ? Yes! Job Unseen answers all of these questions and shall become a source of faith, not a reinforcement of fatalism, confusion and unbelief.
                 </p>
-                <!-- <button id="checkout-button">Checkout</button> -->
-                <button id="buy-button">
-                    <a href="https://www.amazon.com/dp/B074PYWTMB/ref=rdr_kindle_ext_tmb">
-                        <img src="./styles/media/buy-book.png">
-                    </a></button>
+                <!-- <button id="checkout-button">Buy Direct</button> -->
+                <!-- <button id="buy-button">
+                    <select onChange="window.location.href=this.value">
+                        <option value="https://www.amazon.com/Job-Unseen-David-Baird/dp/1498492924/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Amazon</option>
+                        <option value="https://www.barnesandnoble.com/w/job-unseen-david-baird/1126038402?ean=9781498492928">Barnes & Noble</option>
+                    </select>
+                    <img src="./styles/media/buy-book.png">
+                    </a>
+                </button> -->
+                <div class="dropdown-container">
+                    <!-- <button class="btn">
+                        Button
+                    </button> -->
+                    <div class="dropdown">
+                        <button class="btn">
+                            <img src="./styles/media/buy-book.png">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-columns">
+                                <div class="dropdown-links">
+                                    <a href="https://www.amazon.com/Job-Unseen-David-Baird/dp/1498492924/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Amazon</a>
+                                    <a href="https://www.barnesandnoble.com/w/job-unseen-david-baird/1126038402?ean=9781498492928">Barnes and Noble</a>
+                                    <a href="#">Speak to the Rock</a>
+                                </div>
+                                <img src="./styles/media/BOOKMAIN.jpg">
+                            </div>
+                        <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -162,7 +194,9 @@
                                 </audio>
                             </div>
                             <div class="player-controls scrubber">
-                                <h1>The Truth About "All Things Work Together for Good"<small></small></h1>
+                                <h1 class="tooltip">The Truth About "All Things Work Together for Good"
+                                    <!-- <span class="tooltiptext">The Truth About "All Things Work Together for Good"</span> -->
+                                </h1>
                                 <div class="message-text-container">
                                     <p class="message-text">The way Romans 8:28 has been interpreted for generations has hidden the higher meaning and power of this truth...and it is not what we have been told by tradition all these years.
                                     </p>
