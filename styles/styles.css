@@ -168,7 +168,7 @@ a, button:hover {
 
 .welcome-container iframe {
     margin-left: 72px;
-    margin-top: 64px;
+    margin-top: 96px;
 }
 
 
@@ -205,20 +205,21 @@ select {
     height: 48px;
  }
 
-#buy-button {
+#checkout-button {
     border: none;
     padding: 0;
-    margin-top: 32px;
+    margin-top: 8px;
+    height: 48px;
     width: 124px;
 }
 
-#buy-button img {
+#checkout-button img {
     width: 124px;
     z-index: 2;
-    margin-top: -64px;
+    /* margin-top: -64px; */
 }
 
-#buy-button select:hover {
+#checkout-button select:hover {
     cursor: pointer;
 }
 
@@ -234,7 +235,7 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 120px;
+    /* width: 120px; */
     margin: 0 auto;
   }
 
