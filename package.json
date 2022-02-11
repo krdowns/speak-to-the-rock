@@ -20,7 +20,7 @@
   "homepage": "https://github.com/krdowns/speak-to-the-rock#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "stripe": "^8.130.0"
     
   }
